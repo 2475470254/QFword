@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a:link{
+            /* 初始状态的颜色 */
+            color: yellow;
+        }
+        a:visited{
+            /* 访问之后的颜色 */
+            color: red;
+        }
+        a:hover{
+            /* 鼠标悬停时颜色 */
+            color: blue;
+        }
+        a:active{
+            /* 点击激活的颜色 */
+            color: green;
+        }
+    </style>
+</head>
+<!-- 语法 -->
+<!-- 
+    1.a:link{属性：属性值}超链接的初始状态
+    2.a:visited{属性：属性值}超链接被访问后的状态
+    3.a:hover{属性：属性值}鼠标悬停，即鼠标滑过超链接时的状态
+    4.a:active{属性：属性值}超链接被激活时的状态，即鼠标按下时超链接的状态
+    link>visited>hover>active
+ -->
+<body>
+    <a href="http://www.baidu.com/">百度</a>
+</body>
+</html>

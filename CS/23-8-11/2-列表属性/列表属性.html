@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 列表属性 -->
+    <!-- list-style-type:
+            1.disc-实心圆
+            2.circle-空心圆
+            3.square-实心方块
+            4.none-去掉符号-->
+
+    <!-- list-style-image:url();将图片设置为列表符合样式 -->
+
+    <!-- list-style-position:设置列表项标记的放置位置
+            1.list-style-position:outside;列表的外面 默认值 
+            2.list-style-position:inside;列表的里面-->
+    <style>
+        ul{
+            list-style-type: none;
+        }
+        .li1{
+            list-style-image: url(img/1.jpg);
+        }
+        .li2{
+            list-style-image: url(img/2.jpg);
+        }
+        .li3{
+            list-style-image: url(img/3.jpg);
+        }
+        li{
+            border: 1px solid red;
+            list-style-position: inside;
+        }
+
+        .box{
+            list-style: none url(img/1.ipg) inside;
+            /* 复合属性  */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="li1">11111</li>
+        <li class="li2">22222</li>
+        <li class="li3">33333</li>
+    </ul>
+    <ul class="box">
+        <li>44444</li>
+        <li>55555</li>
+        <li>66666</li>
+    </ul>
+</body>
+</html>
